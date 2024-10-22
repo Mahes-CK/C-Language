@@ -1,0 +1,17 @@
+#include <stdio.h>  
+
+void main()
+{
+    int i, count = 0;
+    int num = 19;
+    for(i = 1; i <= num; i++) {
+      if(num % i == 0) 
+        count = count +1;
+    } 
+    if(num == 0 || num == 1)
+         printf("%d is not prime num", num); 
+    else if(count > 2) 
+          printf("%d is not prime num", num);
+       else
+         printf("%d is prime num",num);
+}
